@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  You Are Awesome!
+//  You Are Awesome! First Project!
 //
 //  Created by Kathy Kim on 1/24/22.
 //
