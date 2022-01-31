@@ -23,21 +23,20 @@ class ViewController: UIViewController {
         let messages = ["You are Awesome!",
                         "You are Great!",
                         "You are Fantastic!",
-                        "Fabulous? That's You!"]
+                        "Fabulous? That's You!",
+                        "You've got the Design Skills of Jony Ive!",
+                        "When the Genius Bar Needs Help, They call You!"]
         
-        awesomeLabel.text = messages[messageNumber]
-        messageNumber += 1
-        if messageNumber == messages.count {
-            messageNumber = 0 
-        }
-        
+        awesomeLabel.text = messages[Int.random(in: 0...messages.count-1)]
+        imageView.image = UIImage(named: "image\(Int.random(in: 0...9))")
+
         //let imageName = "image" + String(imageNumber)
-        let imageName = "image\(imageNumber)"
-        imageView.image = UIImage(named: imageName)
-        imageNumber = imageNumber + 1
-        if imageNumber == 10 {
-            imageNumber=0
-        }
+//        let imageName = "image\(imageNumber)"
+//        imageView.image = UIImage(named: imageName)
+//        imageNumber = imageNumber + 1
+//        if imageNumber == 10 {
+//            imageNumber=0
+//        }
 //        if awesomeLabel.text=="You are Awesome!" {
 //            awesomeLabel.text = "You are Great!"
 //            imageView.image = UIImage(named: "image3")
