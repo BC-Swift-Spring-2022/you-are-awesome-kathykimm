@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         awesomeLabel.text = messages[Int.random(in: 0...messages.count-1)]
         imageView.image = UIImage(named: "image\(Int.random(in: 0...9))")
 
+       
         //let imageName = "image" + String(imageNumber)
 //        let imageName = "image\(imageNumber)"
 //        imageView.image = UIImage(named: imageName)
